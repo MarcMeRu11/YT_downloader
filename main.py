@@ -27,11 +27,11 @@ def Download_low_resolution(link):
     except:
         print("Somethig went wrong.")
 while True: 
-    link = input("Put the YouTube link here. URL:")
+    link = input("Put the YouTube link here. URL:\n>>>")
     try:
         obj = YouTube(link)
         titulo = obj.title
-        mode = input("Select a mode:\n-High resolution /.mp4 (H).\n-Low resolution /.mp4 (L).\n-Audio only /.mp3(A).")
+        mode = input("Select a mode:\n-High resolution /.mp4 (H).\n-Low resolution /.mp4 (L).\n-Audio only /.mp3(A).\n>>>")
         if mode == "H":
             modo = "high Resolution"
         elif mode == "L":
